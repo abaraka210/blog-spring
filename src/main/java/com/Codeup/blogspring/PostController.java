@@ -31,5 +31,10 @@ public class PostController {
     public String insert(){
         return "create a new post";
     }
+    @RequestMapping("/posts/delete/{id}")
+    @ResponseBody
+    public String delete(@PathVariable int id) {
+        return "Delete a post";
+    }
 
 }
